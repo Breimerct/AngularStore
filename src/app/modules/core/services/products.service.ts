@@ -26,5 +26,12 @@ export class ProductsService {
     return this.http.post<Product>(this.link, product);
   }
 
-  editProduct(): void {}
+  editProduct(id: string, product: Partial<Product>): Observable<Product> {
+    return this.http.put<Product>(`${this.link}/${id}`, product);
+  }
+
+  deleteProduct(id: string): Observable<Product> {
+    return this.http.delete<Product>(`${this.link}/${id}`);
+  }
+
 }
