@@ -1,0 +1,41 @@
+<p>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <div class="row between-xs middel-xs full-width">
+        <div class="col">
+          <span>Platzi Ecomerce</span>
+        </div>
+        <!-- <span class="example-spacer"></span> -->
+        <div class="col">
+          <nav>
+            <a
+              mat-button
+              routerLink="/home"
+              routerLinkActive="router-link-active"
+            >
+              Home
+            </a>
+            <a
+              mat-button
+              routerLink="/products"
+              routerLinkActive="router-link-active"
+            >
+              Products
+            </a>
+            <a
+              mat-button
+              routerLink="/contact"
+              routerLinkActive="router-link-active"
+            >
+              Contact
+            </a>
+            <a mat-button matBadge="15" matBadgeColor="warn">
+              Carrito
+              <mat-icon>shopping_cart</mat-icon>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</p>

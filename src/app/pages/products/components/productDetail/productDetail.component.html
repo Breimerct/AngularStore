@@ -1,0 +1,27 @@
+<div class="product-datail" *ngIf="product">
+    <div class="product-detail-image">
+        <img [src]="product.image" alt="product detail image">
+    </div>
+    <div class="product-detail-content">
+        <div class="title">
+            <h1>
+                {{ product.title }}
+            </h1>
+        </div>
+        <div class="price">
+            <p>
+                {{ product.price | currency: '$ ' }}
+            </p>
+        </div>
+        <div class="description">
+            <p>
+                {{ product.description }}
+            </p>
+        </div>
+        <div class="product-action">
+            <button mat-raised-button color="primary">
+                Agregar al carrito
+            </button>
+        </div>
+    </div>
+</div>
