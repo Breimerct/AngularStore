@@ -7,14 +7,22 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { NavComponent } from './components/nav/nav.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
+import { InventoryComponent } from './components/inventory/inventory.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, DashboardComponent],
+  declarations: [
+    ProductFormComponent,
+    NavComponent,
+    DashboardComponent,
+    InventoryComponent,
+    ProductListComponent,
+  ],
   imports: [
     CommonModule,
     AdminRoutingModule,
     ReactiveFormsModule,
     MaterialModule,
-  ]
+  ],
 })
-export class AdminModule { }
+export class AdminModule {}

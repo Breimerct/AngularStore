@@ -23,6 +23,6 @@ export class ProductDetailComponent implements OnInit {
   }
 
   getProduct(id: string): void {
-    this.productService.getOneProduct(id).subscribe((p) => (this.product = p));
+    this.productService.getOneProduct(id).subscribe(p => (this.product = p));
   }
 }
